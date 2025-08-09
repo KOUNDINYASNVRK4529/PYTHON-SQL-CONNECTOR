@@ -9,7 +9,7 @@ from datetime import date, datetime, time
 password1 = os.getenv("DB_PASSWORD")
 host1 = os.getenv("DB_HOST")
 database1 = os.getenv("DB_NAME")'''
-con = db.connect(user='bank',password='bank@123',host='127.0.0.1',database='BMS')
+con = db.connect(user=' ',password=' ',host=' ',database=' ') # Your Database User ,password, host and DB
 cur = con.cursor()
 def safe_int_input(prompt, max_attempts=3):
     attempts = 0
@@ -336,4 +336,5 @@ while flag:
         flag = chkcnt(cnt)
 con.commit()
 cur.close()
+
 con.close()
